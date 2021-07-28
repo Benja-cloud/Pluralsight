@@ -1,0 +1,7 @@
+h1   {
+    color: rgb(0, 204, 255);
+} 
+.row {
+    border: solid 1px;
+    display: inline;
+}
