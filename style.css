@@ -1,7 +1,31 @@
+.desktop, .print{
+    display: none;
+}
+@media print{
+    .mobile, .desktop{
+        display:none;
+    }
+}
+.print{
+    display: block;
+}
+@media screen and (min-width: 768px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
 h1   {
     color: rgb(0, 204, 255);
 } 
-.row {
+.columns {
     border: solid 1px;
-    display: inline;
+    display: flex;
+    
+}
+.columns > div {
+    border: solid 1px;
+    flex: 1;
 }
